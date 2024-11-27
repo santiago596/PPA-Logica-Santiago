@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #f7efd8;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+.headerPages{
+    background-color: #f7efd8;
+    display: flex;
+    align-items: center;
+    height: 125px;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    margin: 1rem;
+    border-radius: 50px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #333128;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+    
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #ffffff;
+}
+
+
+#total-carrito {
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: red;
+}
+
+.borrar {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt span {
+    font-size: 16px;
+    color: red;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 1;
+    color: #333128;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: #181713;
+    margin-bottom: 45px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: red;
+    text-transform: capitalize;
+}
+
+.btn-1:hover {
+    background-color: rgb(102, 99, 85);
+}
+    
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*Contacto*/
+
+aside {
+    width: 100%;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .8),rgba(0 0 0 / .8)),url(imagenes/suplemento.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.containerAside {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.data > p > i {
+    color:#DD392E;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #DD392E;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid #DD392E;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:#DD392E;
+}
+
+.form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: #DD392E;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form > button:hover,
+.links > a:hover {
+    background: #111010;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+/* CARRUSEL */
+
+.tituloCarrusel{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: bold;
+    color: hwb(0 14% 0%);
+}
+
+#carru{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    max-width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 25px;
+}
+
+.wrapper i{
+    top: 50%;
+    height: 30px;
+    width: 44px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    background: #363636;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    /* border: red 2px solid; */
+}
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover{
+    background: #000000;
+}
+
+.wrapper i:first-child{
+    left: -20px;
+    display: none;
+}
+
+.wrapper i:last-child{
+    right: -22px;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel img{
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 10px;
+    width: calc(100% / 4);
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+.oferts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Crear 5 columnas de igual tamaño */
+    gap: 15px; /* Espacio entre las imágenes */
+    background-color: #f7efd8;
+    padding: 1rem;
+    width: 100%;
+}
+
+.ofert-1 {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra el contenido de cada oferta */
+    background-color: rgb(240, 238, 192);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0px -5px 0px -5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.ofert-txt {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ofert-txt h3 {
+    font-size: 25px;
+    color: red;
+    font-weight: 600;
+}
+
+
+.descripcionOfert{
+    margin: -30px 0px 40px 0px;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.ajust-precio {
+    font-size: 20px;
+}
+
+
+.ofert-txt img {
+    width: 80%; /* Asegura que las imágenes ocupen todo el espacio disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: redondea las esquinas de la imagen */
+}
+
+.agregar-carrito {
+    margin: -30px 0px 10px 0px;  
+    padding: 8px 16px; /* Espaciado interno del botón */
+    background-color: red; /* Color de fondo del botón */
+    text-decoration: none; /* Elimina subrayado en el enlace */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    display: inline-block; /* Asegura que el botón no se estire más de lo necesario */
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.agregar-carrito:hover {
+    background-color: rgb(102, 99, 85); /* Cambio de color al pasar el ratón sobre el botón */
+}
+
+.titulo-product {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    font-weight: bold;
+    color: hwb(0 14% 0%);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Crear 5 columnas de igual tamaño */
+    gap: 15px; /* Espacio entre las imágenes */
+    background-color: #f7efd8;
+    padding: 1rem;
+    width: 100%;
+}
+
+.product-1 {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra el contenido de cada oferta */
+    background-color: rgb(240, 238, 192);
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 0px -5px 0px -5px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.product-txt {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-txt h3 {
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 20px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 25px;
+    border-bottom: 5px solid rgb(253, 211, 211);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+
+
+.footer-links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 30px;
+    width: 30px;
+    background-color: rgba(56, 50, 50, 0.678);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: rgb(238, 217, 217);
+}
+
+
+

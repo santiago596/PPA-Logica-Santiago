@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="headerPages">
+    <div class="menu container">
+        <img src="imagenes/logo.png" class="logo" alt="">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Ofertas</a></li>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="imagenes/carrito.svg" id="img-carrito" alt="carrito">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+
+                        </table>
+                        <p id="total-carrito">Total: $0.00</p>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <aside>
+        <div class="containerAside">
+            <div class="box-info">
+                <h1>CONTÁCTATE CON NOSOTROS</h1>
+                <div class="data">
+                    <p><i class="fa-solid fa-phone"></i> +57 3145246615</p>
+                    <p><i class="fa-solid fa-envelope"></i> santiagomedina0404@gmail.com </p>
+                    <p><i class="fa-solid fa-location-dot"></i> Av 23 #27-100 barrio Santander </p>
+                </div>
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xanyeqzw" method="POST" class="form" >
+                <div class="input-box">
+                    <input  type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Correo electrónico">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="phone" id="phone" placeholder="Numero">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="input-box">
+                    <textarea name="messege" id="messeje" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <div class="container-2">
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Conocenos</h4>
+                        <ul>
+                            <li><a href="#">¿Quienes somos?</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                    </ul>
+                    </div>
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Contacta con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Politica</h4>
+                        <ul>
+                            <li><a href="#">Politica y privacidad</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contactanos</h4>
+                        <ul>
+                            <li><a href="#">pulsetfit04@gmail.com</a></li>
+                            <li><a href="#">Celular:3145246615</a></li>
+                            <li><a href="#">Servicio al cliente:3145246615</a></li>
+                            <li><a href="#">Av 23 #27-100,Cucuta,Colombia</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos en las redes</h4>
+                        <div class="social-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <img src="imagenes/logo.png" class="logo" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#oferta">Ofertas</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes/carrito.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+
+                            </table>
+                            <p id="total-carrito">Total: $0.00</p>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+
+            <div class="header-txt" id="suplementos">
+                <span>Ofertas</span>
+                <h1>Suplementos Deportivos</h1>
+                <p>
+                    Tu fuente confiable para los mejores suplementos deportivos. 
+                    Diseñados para potenciar tu rendimineto y ayudarte a alcanzar tus metas, 
+                    nuestros productos estan cuidadosamente seleccionados y respaldados por ciencia y calidad. 
+                    Ya sea que busques aumentar tu energia, mejorar la recuperacion o fortalecer tu cuerpo, 
+                    tenemos lo que necesitas para impulsar tu entrenamiento al siguiente nivel.
+                </p>
+                <a href="#productos" class="btn-1">Ver Productos</a>
+            </div>
+            <div class="header-img">
+                <img src="imagenes/suplemento.jpg" class="suplement" alt="">
+            </div>
+
+        </div>
+
+    </header>
+    <h2 class="tituloCarrusel">PRODUCTOS EN OFERTA</h2>
+    <section id="oferta">
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+
+                <img src="imagenes/img1carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img2carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img3carru.avif" alt="img" draggable="false">
+                <img src="imagenes/img4carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img5carru.webp" alt="img" draggable="false">
+                <img src="imagenes/img6carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img7carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img8carru.jpg" alt="img" draggable="false">
+                <img src="imagenes/img9carru.webp" alt="img" draggable="false">
+                <img src="imagenes/img10carru.webp" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </section>
+
+    <section class="oferts container">
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img1carru.jpg" alt="">
+                <h3>OFERTA<br>Creatina Drive<br/></h3>
+                <p class="ajust-precio">$75.900</p>
+                <p class="descripcionOfert">Producto en oferta con diseño moderno y atractivo. Perfecto para quienes buscan calidad y buen precio. ¡No te lo pierdas!</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img2carru.jpg" alt="">
+                <h3>OFERTA<br>Monohidrato<br></h3>
+                <p class="ajust-precio">$48.500</p>
+                <p class="descripcionOfert"> Artículo en oferta con elegante diseño. Ideal para quienes buscan calidad y estilo. Aprovecha esta oportunidad única de compra.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img3carru.avif" alt="">
+                <h3>OFERTA<br>Bacaas<br></h3>
+                <p class="ajust-precio">$65.000</p>
+                <p class="descripcionOfert">Oferta de producto vibrante, con colores llamativos y diseño contemporáneo. Perfecto para quienes buscan modernidad.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img4carru.jpg" alt="">
+                <h3>OFERTA<br>Creatina<br></h3>
+                <p class="ajust-precio">$63.400</p>
+                <p class="descripcionOfert">Producto con oferta destacada, diseño sencillo pero elegante. Una excelente opción para personas de alta calida.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img5carru.webp" alt="">
+                <h3>OFERTA<br>Nitro Tech<br></h3>
+                <p class="ajust-precio">$55.200</p>
+                <p class="descripcionOfert">Producto en oferta con diseño atractivo y moderno. Perfecto para quienes buscan calidad, estilo y un precio accesible.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img6carru.jpg" alt="">
+                <h3>OFERTA<br>Animal Best<br></h3>
+                <p class="ajust-precio">$45.400</p>
+                <p class="descripcionOfert">Producto en oferta con estilo sofisticado, moderno y práctico. Ideal para quienes desean calidad y diseño atractivo a buen precio.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img7carru.jpg" alt="">
+                <h3>OFERTA<br>Proteina<br></h3>
+                <p class="ajust-precio">$65.400</p>
+                <p class="descripcionOfert">Oferta de artículo con diseño llamativo y colores vibrantes. Ideal para aquellos que buscan añadir estilo único a su espacio.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img8carru.jpg" alt="">
+                <h3>OFERTA<br>Energy Whey<br></h3>
+                <p class="ajust-precio">$78.000</p>
+                <p class="descripcionOfert">Producto destacado con diseño minimalista y elegante. Perfecto para quienes aprecian el estilo sencillo y funcional.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img9carru.webp" alt="">
+                <h3>OFERTA<br>HMB<br></h3>
+                <p class="ajust-precio">$67.300</p>
+                <p class="descripcionOfert">Oferta especial con diseño moderno y elegante. Ideal para quienes buscan un producto duradero, de calidad y con estilo.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="ofert-1">
+            <div class="ofert-txt">
+                <img src="imagenes/img10carru.webp" alt="">
+                <h3>OFERTA<br>Creatina<br></h3>
+                <p class="ajust-precio">$58.900</p>
+                <p class="descripcionOfert">Artículo en oferta con diseño contemporáneo y atractivo. Perfecto para quienes buscan productos de alta calidad.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar</a>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="titulo-product" id="productos"> VENTA DE PRODUCTOS</h2>
+
+    <section class="products container">
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img1produc.jpg" alt="">
+                <h3>PROTEINA AISLADA</h3>
+                <p class="ajust-precio">$150.000</p>
+                <p class="descripcionOfert">Proteína aislada en oferta, ideal para mejorar rendimiento físico y salud muscular. Diseño moderno, perfecto para deportistas exigentes.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img2produc.jpg" alt="">
+                <h3>CREATINA MUSCLETECH</h3>
+                <p class="ajust-precio">$130.000</p>
+                <p class="descripcionOfert">Creatina de calidad Muscletech, con diseño elegante. Ideal para aquellos que buscan aumentar fuerza y rendimiento muscular.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img3produc.jpg" alt="">
+                <h3>CREATINE MONOHYDRATE</h3>
+                <p class="ajust-precio">$170.800</p>
+                <p class="descripcionOfert">Creatina Monohidratada con diseño moderno y llamativo. Perfecta para optimizar la energía y fuerza durante entrenamientos intensos</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img4produc.jpg" alt="">
+                <h3>ISO 100 5 LB</h3>
+                <p class="ajust-precio">$95.000</p>
+                <p class="descripcionOfert">ISO 100 de 5 LB, proteína de alta calidad. Su diseño sencillo y elegante la convierte en una opción confiable.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img5produc.jpg" alt="">
+                <h3>PROTEINA BEST PROTEIN</h3>
+                <p class="ajust-precio">$98.000</p>
+                <p class="descripcionOfert">Proteína Best Protein, en oferta con un diseño atractivo y moderno. Ideal para quienes buscan un producto accesible y de calidad.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img6produc.jpg" alt="">
+                <h3>GOLD STANDARD</h3>
+                <p class="ajust-precio">$85.600</p>
+                <p class="descripcionOfert">Gold Standard, proteína con calidad superior y diseño sofisticado. Perfecta para quienes buscan una excelente opción de nutrición.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img7produc.jpg" alt="">
+                <h3>CREAKONG</h3>
+                <p class="ajust-precio">$120.000</p>
+                <p class="descripcionOfert">Creakong, suplemento con un diseño vibrante y llamativo. Ideal para quienes desean añadir un toque único y funcional a su rutina.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img8produc.jpg" alt="">
+                <h3>CREATINA ATOMIC</h3>
+                <p class="ajust-precio">$135.500</p>
+                <p class="descripcionOfert">Creatina Atomic, producto minimalista y elegante. Perfecto para quienes buscan simplicidad, efectividad y estilo.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img9produc.jpg" alt="">
+                <h3>CREATINA CELL TECH</h3>
+                <p class="ajust-precio">$178.200</p>
+                <p class="descripcionOfert"> Creatina Cell Tech, producto moderno y elegante para mejorar tu rendimiento físico. Ideal para quienes exigen calidad y estilo.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar</a>
+            </div>
+        </div>
+    
+        <div class="product-1">
+            <div class="product-txt">
+                <img src="imagenes/img10produc.jpg" alt="">
+                <h3>HYDROXYCUT</h3>
+                <p class="ajust-precio">$165.200</p>
+                <p class="descripcionOfert"> Hydroxycut en oferta, con un diseño contemporáneo y atractivo. Perfecto para quienes buscan calidad y un impulso en su rendimiento físico.</p>
+                <a href="#" class="agregar-carrito btn-2" data-id="10">Agregar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-2">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Conocenos</h4>
+                    <ul>
+                        <li><a href="#suplementos">¿Quienes somos?</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-row">
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="contacto.html">Contacta con nosotros</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Politica</h4>
+                        <ul>
+                            <li><a href="#">Politica y privacidad</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contactanos</h4>
+                        <ul>
+                            <li><a href="#">pulsetfit04@gmail.com</a></li>
+                            <li><a href="#">Celular:3145246615</a></li>
+                            <li><a href="#">Servicio al cliente:3145246615</a></li>
+                            <li><a href="#">Av 23 #27-100,Cucuta,Colombia</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos en las redes</h4>
+                        <div class="social-link">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
